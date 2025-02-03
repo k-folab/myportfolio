@@ -22,7 +22,7 @@ const Navbar = () => {
     <div
       className={`fixed top-0 left-0 w-full z-10 text-blue-600 font-poppins rounded-br-2xl rounded-bl-2xl shadow-lg ${
         theme === "dark"
-          ? "bg-gray-800 text-white"
+          ? "bg-blue-900 text-white"
           : "bg-blue-100 text-blue-500"
       }`}
     >
@@ -40,28 +40,28 @@ const Navbar = () => {
               <ul className="flex space-x-8 items-center gap-5">
                 <a
                   href="/"
-                  className="font-semibold text-lg transform transition-all duration-300 hover:rotate-12"
+                  className="font-semibold text-lg transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
                 >
                   HOME
                 </a>
 
                 <a
                   href="/about"
-                  className="font-semibold text-lg transform transition-all duration-300 hover:rotate-12"
+                  className="font-semibold text-lg transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
                 >
                   ABOUT ME
                 </a>
 
                 <a
                   href="/projects"
-                  className="font-semibold text-lg transform transition-all duration-300 hover:rotate-12"
+                  className="font-semibold text-lg transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
                 >
                   PROJECTS
                 </a>
 
                 <a
                   href="/contact"
-                  className="font-semibold text-lg transform transition-all duration-300 hover:rotate-12"
+                  className="font-semibold text-lg transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
                 >
                   CONTACT
                 </a>
@@ -71,7 +71,7 @@ const Navbar = () => {
             {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
-              className="py-2 px-3 max-md:hidden bg-white border-none text-xs max-sm:h-7 font-poppins text-gray-600 rounded-lg"
+              className="py-2 px-3 max-md:hidden bg-blue-700 text-white dark:bg-white dark:text-blue-500 border-none text-xs max-sm:h-7 font-poppins  rounded-full"
             >
               {theme === "dark" ? (
                 <Image
@@ -98,7 +98,7 @@ const Navbar = () => {
               {/* Theme Toggle */}
               <button
                 onClick={toggleTheme}
-                className="py-2 px-3 bg-white border-none text-xs max-sm:h-7 font-poppins text-gray-600 rounded-lg"
+                className="py-2 px-3 bg-blue-500 text-white dark:bg-white dark:text-blue-500 border-none text-xs max-sm:h-7 font-poppins rounded-full"
               >
                 {theme === "dark" ? (
                   <Image
@@ -157,19 +157,25 @@ const Navbar = () => {
           onClick={handleCloseMenu}
         >
           <div className="absolute left-0 top-16  h-[calc(100%-4rem)] text-blue-400 p-6 space-y-7 ">
-            <Link href="/" className="block text-white hover:text-white">
+            <Link href="/" className="block text-white hover:text-blue-500">
               Home
             </Link>
-            <Link href="/about" className="block text-white hover:text-white">
+            <Link
+              href="/about"
+              className="block text-white hover:text-blue-500"
+            >
               About Me
             </Link>
             <Link
               href="/projects"
-              className="block text-white hover:text-white"
+              className="block text-white hover:text-blue-500"
             >
               Projects
             </Link>
-            <Link href="/contact" className="block text-white hover:text-white">
+            <Link
+              href="/contact"
+              className="block text-white hover:text-blue-500"
+            >
               Contact
             </Link>
           </div>
