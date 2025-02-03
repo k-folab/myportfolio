@@ -49,7 +49,7 @@ const Navbar = () => {
                   href="/about"
                   className="font-semibold text-lg transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
                 >
-                  ABOUT ME
+                  ABOUT
                 </a>
 
                 <a
@@ -164,7 +164,7 @@ const Navbar = () => {
               href="/about"
               className="block text-white hover:text-blue-500"
             >
-              About Me
+              About
             </Link>
             <Link
               href="/projects"

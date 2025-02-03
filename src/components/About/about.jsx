@@ -16,19 +16,19 @@ const AboutSection = () => {
       id="about"
       className="bg-blue-50 text-blue-700 min-h-screen dark:bg-blue-950 dark:text-white py-16 px-6 md:px-12"
     >
-      <div className="max-w-6xl mx-auto font-poppins">
+      <div className="max-w-6xl mx-auto font-poppins ">
         <div className="text-4xl font-bold text-center pb-10">
           ABOUT ME{" "}
           <span className="text-blue-700 dark:text-white text-sm mr-2">●</span>
         </div>
         <div className="mt-10 mb-20">
-          <div className="text-4xl font-bold text-center pb-5">
+          <div className="text-4xl font-bold text-center pb-5 transform transition-all duration-300 hover:text-blue-400 hover:rotate-12">
             ABOUT ME{" "}
             <span className="text-blue-700 dark:text-white text-sm mr-2">
               ●
             </span>
           </div>
-          <div className="text-center text-gray-500 dark:text-white text-xl">
+          <div className="text-center text-gray-500 dark:text-white text-xl max-sm:text-sm">
             Hi, my name is{" "}
             <span className="text-blue-700 font-bold">AFOLABI KEHINDE.</span> A
             Front End developer passionate about creating responsive and
@@ -40,7 +40,7 @@ const AboutSection = () => {
 
         {/* Coding Section */}
         <div className=" flex-col md:flex-row items-center gap-8 mb-16">
-          <div className=" text-3xl pb-3 font-bold text-center">
+          <div className=" text-3xl pb-3 font-bold text-center ">
             Coding
             <span class="text-blue-700 dark:text-white text-sm ml-2">●</span>
           </div>
@@ -53,7 +53,7 @@ const AboutSection = () => {
               className="mx-auto hover:scale-110 transition-transform duration-500 rounded-full"
             />
           </div>
-          <p className="text-lg text-gray-500 dark:text-white">
+          <p className="text-lg max-sm:text-sm text-gray-500 dark:text-white ">
             Coding is my passion and the heart of my creativity. It’s where I
             bring ideas to life and solve problems through innovative solutions.
             I enjoy experimenting with new technologies, building projects, and
@@ -85,7 +85,7 @@ const AboutSection = () => {
               className="mx-auto hover:scale-110 transition-transform duration-500 rounded-full"
             />
           </div>
-          <p className="text-lg text-gray-500 dark:text-white">
+          <p className="text-lg max-sm:text-sm text-gray-500 dark:text-white">
             Reading has always been a source of inspiration and knowledge for
             me. It allows me to explore new worlds, ideas, and perspectives.
             From novels to self-help books, I enjoy delving into stories that
@@ -111,7 +111,7 @@ const AboutSection = () => {
               className="mx-auto hover:scale-110 transition-transform duration-500 rounded-full"
             />
           </div>
-          <p className="text-lg text-gray-500 dark:text-white">
+          <p className="text-lg max-sm:text-sm text-gray-500 dark:text-white">
             Gaming is where I find relaxation and excitement rolled into one.
             It's more than just playing; it's about problem-solving, strategic
             thinking, and teamwork. Whether it's exploring vast open worlds or
@@ -164,7 +164,7 @@ const AboutSection = () => {
               className="mx-auto hover:scale-110 transition-transform duration-500 rounded-full"
             />
           </div>
-          <p className="text-lg text-gray-500 dark:text-white">
+          <p className="text-lg max-sm:text-sm text-gray-500 dark:text-white">
             Fitness and sports are my go-to activities for staying healthy and
             energized. Whether it’s hitting the gym, jogging, or playing sports,
             staying active keeps my mind and body sharp. I enjoy the thrill of
@@ -190,7 +190,7 @@ const AboutSection = () => {
               className="mx-auto hover:scale-110 transition-transform duration-500 rounded-full"
             />
           </div>
-          <p className="text-lg text-gray-500 dark:text-white">
+          <p className="text-lg max-sm:text-sm text-gray-500 dark:text-white">
             Music is my escape and a source of endless joy. It’s the rhythm that
             keeps me going and the melody that soothes my soul. I love exploring
             different genres, from classical to modern beats. Music has a way of

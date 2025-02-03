@@ -16,7 +16,7 @@ const Homesection = () => {
       <div className="bg-blue-50 min-h-screen dark:bg-blue-950 dark:text-white flex mt-6 items-center justify-center">
         <div className="max-w-6xl flex flex-row max-sm:gap-10 max-sm:flex-col-reverse font-poppins items-center">
           <div className="flex-1 text-center md:text-left">
-            <div className="font-poppins">
+            <div className="font-poppins m-6">
               <div className="text-3xl text-gray-500 dark:text-white tracking-wide font-bold">
                 Hey, I'm
               </div>
@@ -24,13 +24,13 @@ const Homesection = () => {
                 KEHINDE AFOLABI
               </div>
             </div>
-            <p className="text-lg md:text-xl text-gray-600 dark:text-white mt-6">
+            <p className="text-lg max-sm:text-[16px] md:text-xl text-gray-600 dark:text-white m-6">
               A passionate{" "}
               <span className=" font-bold text-blue-700 ">Web Developer </span>
               with a 3 years experience in creating modern, responsive, and
               beautiful websites through carefully crafted codes.
             </p>
-            <div className="mt-10 flex gap-7 items-center max-md:justify-center">
+            <div className="mt-10 flex gap-7 items-center max-md:justify-center ml-6">
               <Link
                 href="/about"
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-gradient-to-r hover:from-blue-600 hover:to-white hover:text-blue-800 transition duration-300 ease-in-out "
@@ -68,7 +68,7 @@ const Homesection = () => {
             <img
               src="https://via.placeholder.com/400x400"
               alt="img"
-              className="w-80 md:w-full h-60  md:h-70 bg-gray-200 rounded-3xl"
+              className="w-80 md:w-full h-60  md:h-70 bg-gray-200 rounded-full"
             />
           </div>
         </div>
@@ -80,7 +80,7 @@ const Homesection = () => {
         </div>
         <div className="flex flex-col gap-14">
           <div className="flex justify-around text-blue-700 dark:text-white">
-            <div className=" flex flex-col text-center gap-5">
+            <div className=" flex flex-col text-center gap-5 shadow-2xl rounded-3xl p-2">
               <Image
                 src={HTML5}
                 alt="HTML"
@@ -90,7 +90,7 @@ const Homesection = () => {
               />
               <h3>HTML</h3>
             </div>
-            <div className="flex flex-col text-center gap-5">
+            <div className="flex flex-col text-center gap-5 shadow-2xl rounded-3xl p-2">
               <Image
                 src={CSS3}
                 alt="CSS"
@@ -100,7 +100,7 @@ const Homesection = () => {
               />
               <h3>CSS</h3>
             </div>
-            <div className="flex flex-col text-center gap-5">
+            <div className="flex flex-col text-center gap-5 shadow-2xl rounded-3xl p-2">
               <Image
                 src={TailwindCSS}
                 alt="Tailwindcss"
@@ -112,17 +112,7 @@ const Homesection = () => {
             </div>
           </div>
           <div className="flex justify-around text-blue-700 dark:text-white">
-            <div className=" flex flex-col text-center gap-5">
-              <Image
-                src={JavaScript}
-                alt="JavaScript"
-                width={80}
-                height={80}
-                className="mx-auto hover:scale-110 transition-transform duration-300 rounded-lg"
-              />
-              <h3>JAVASCRIPT</h3>
-            </div>
-            <div className="flex flex-col text-center gap-5">
+            <div className=" flex flex-col text-center gap-5 shadow-2xl rounded-3xl p-2">
               <Image
                 src={Reactlogo}
                 alt="React"
@@ -132,7 +122,7 @@ const Homesection = () => {
               />
               <h3>REACT</h3>
             </div>
-            <div className="flex flex-col text-center gap-5">
+            <div className="flex flex-col text-center gap-5 shadow-2xl rounded-3xl p-2">
               <Image
                 src={Nextjs}
                 alt="Nextjs"
@@ -141,6 +131,16 @@ const Homesection = () => {
                 className="mx-auto hover:scale-110 transition-transform duration-300 rounded-lg"
               />
               <h3>NEXT JS</h3>
+            </div>
+            <div className="flex flex-col text-center gap-5 shadow-2xl rounded-3xl p-2">
+              <Image
+                src={JavaScript}
+                alt="JavaScript"
+                width={80}
+                height={80}
+                className="mx-auto hover:scale-110 transition-transform duration-300 rounded-lg"
+              />
+              <h3>JAVASCRIPT</h3>
             </div>
           </div>
         </div>
