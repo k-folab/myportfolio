@@ -14,30 +14,35 @@ const AboutSection = () => {
   return (
     <div
       id="about"
-      className="bg-blue-50 text-blue-500 min-h-screen dark:bg-blue-950 dark:text-white py-16 px-6 md:px-12"
+      className="bg-blue-50 text-blue-700 min-h-screen dark:bg-blue-950 dark:text-white py-16 px-6 md:px-12"
     >
       <div className="max-w-6xl mx-auto font-poppins">
-        <h2 className="text-3xl text-blue-700 dark:text-blue-400 font-bold mb-12 text-center">
-          About Me
-        </h2>
-        <div className="pb-10">
-          <div className="text-4xl font-bold text-center pb-10">
-            ABOUT ME <span class="text-blue-700 text-sm mr-2">●</span>
+        <div className="text-4xl font-bold text-center pb-10">
+          ABOUT ME{" "}
+          <span className="text-blue-700 dark:text-white text-sm mr-2">●</span>
+        </div>
+        <div className="mt-10 mb-20">
+          <div className="text-4xl font-bold text-center pb-5">
+            ABOUT ME{" "}
+            <span className="text-blue-700 dark:text-white text-sm mr-2">
+              ●
+            </span>
           </div>
           <div className="text-center text-gray-500 dark:text-white text-xl">
             Hi, my name is{" "}
-            <span className="text-blue-500 font-bold">AFOLABI KEHINDE.</span> A
-            web developer passionate about creating responsive and user-friendly
-            websites and applications. Always learning and growing, I enjoy
-            turning ideas into functional and visually appealing digital
-            experiences.
+            <span className="text-blue-700 font-bold">AFOLABI KEHINDE.</span> A
+            Front End developer passionate about creating responsive and
+            user-friendly websites and applications. Always learning and
+            growing, I enjoy turning ideas into functional and visually
+            appealing digital experiences.
           </div>
         </div>
 
         {/* Coding Section */}
         <div className=" flex-col md:flex-row items-center gap-8 mb-16">
           <div className=" text-3xl pb-3 font-bold text-center">
-            Coding<span class="text-blue-600 text-sm ml-2">●</span>
+            Coding
+            <span class="text-blue-700 dark:text-white text-sm ml-2">●</span>
           </div>
           <div className="pb-5">
             <Image
@@ -60,15 +65,16 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="text-4xl text-center pb-10">
+        <div className="text-3xl text-gray-900 dark:text-white text-center pb-10">
           Things I love to do when I'm not coding
-          {/* <span class="text-blue-600 text-sm ml-2">●</span> */}
+          {/* <span class="text-blue-700 text-sm ml-2">●</span> */}
         </div>
 
         {/* Reading Section */}
         <div className="flex-col md:flex-row items-center gap-8 mb-16">
           <div className=" text-3xl pb-3 font-bold text-center">
-            Reading<span class="text-blue-600 text-sm ml-2">●</span>
+            Reading
+            <span class="text-blue-700 dark:text-white text-sm ml-2">●</span>
           </div>
           <div className="pb-5">
             <Image
@@ -93,7 +99,8 @@ const AboutSection = () => {
         {/* Gaming Section */}
         <div className=" flex-col md:flex-row-reverse items-center gap-8 mb-16">
           <div className=" text-3xl pb-3 font-bold text-center">
-            Gaming<span class="text-blue-600 text-sm ml-2">●</span>
+            Gaming
+            <span class="text-blue-700 dark:text-white text-sm ml-2">●</span>
           </div>
           <div className="pb-5">
             <Image
@@ -112,15 +119,15 @@ const AboutSection = () => {
             adventure. It's a way to connect with friends, unwind after a busy
             day, and sometimes challenge myself to achieve new milestones.
             Gaming inspires creativity and lets me immerse in worlds beyond
-            reality.Call Of Duty(CODM) is that one game I love to play whenever
+            reality. Call Of Duty(CODM) is that one game I love to play whenever
             I want to relax.
           </p>
         </div>
 
-        {/* Traveling Section */}
+        {/* Traveling Section
         <div className=" flex-col md:flex-row items-center gap-8 mb-16">
           <div className=" text-3xl pb-3 font-bold text-center">
-            Traveling<span class="text-blue-600 text-sm ml-2">●</span>
+            Traveling<span class="text-blue-700 text-sm ml-2">●</span>
           </div>
           <div className="pb-5">
             <Image
@@ -140,12 +147,13 @@ const AboutSection = () => {
             zone, and gaining a fresh perspective on life. Traveling teaches me
             to appreciate the simple joys and the rich tapestry of humanity.
           </p>
-        </div>
+        </div> */}
 
         {/* Fitness and Sports Section */}
         <div className=" flex-col md:flex-row-reverse items-center gap-8 mb-16">
           <div className=" text-3xl pb-3 font-bold text-center">
-            Sports And Fitness<span class="text-blue-600 text-sm ml-2">●</span>
+            Sports And Fitness
+            <span class="text-blue-700 dark:text-white text-sm ml-2">●</span>
           </div>
           <div className="pb-5">
             <Image
@@ -170,7 +178,8 @@ const AboutSection = () => {
         {/* Music Section */}
         <div className=" flex-col md:flex-row items-center gap-8">
           <div className=" text-3xl pb-3 font-bold text-center">
-            Music<span class="text-blue-600 text-sm ml-2">●</span>
+            Music
+            <span class="text-blue-700 dark:text-white text-sm ml-2">●</span>
           </div>
           <div className="pb-5">
             <Image
