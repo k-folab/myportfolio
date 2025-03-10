@@ -58,7 +58,7 @@ const ProjectSection = () => {
             <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
               Invoice Generator
             </h3>
-            <p className="text-gray-700 dark:text-white mb-4">
+            <p className="text-gray-600 dark:text-white mb-4">
               A free online tool to create and send professional invoices with a
               built-in signature feature. Includes customizable templates and
               dark mode support.
@@ -83,7 +83,7 @@ const ProjectSection = () => {
             <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
               Cryptocurrency Dashboard
             </h3>
-            <p className="text-gray-700 dark:text-white mb-4">
+            <p className="text-gray-600 dark:text-white mb-4">
               A real-time dashboard displaying market trends, a search bar to
               find specific coins, and interactive charts for data visualization
             </p>
@@ -107,7 +107,7 @@ const ProjectSection = () => {
             <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
               My Portfolio
             </h3>
-            <p className="text-gray-700 dark:text-white mb-4">
+            <p className="text-gray-600 dark:text-white mb-4">
               This particular portfolio website that you are on was built by me.
             </p>
             <Link

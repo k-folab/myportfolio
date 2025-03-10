@@ -6,7 +6,7 @@ import coding from "/public/coding.png";
 import gaming from "/public/gaming.png";
 import traveling from "/public/traveling.png";
 import sport from "/public/sport.png";
-import music from "/public/music.png";
+import music2 from "/public/music2.png";
 
 import Link from "next/link";
 
@@ -201,8 +201,8 @@ const AboutSection = () => {
           </div>
           <div className="pb-5">
             <Image
-              src={music}
-              alt="musicimg"
+              src={music2}
+              alt="music2img"
               width={400}
               height={100}
               className="mx-auto hover:scale-110 transition-transform duration-500 rounded-full"

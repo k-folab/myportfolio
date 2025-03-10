@@ -41,33 +41,33 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="flex gap-5">
+          <div className="flex gap-2">
             <div className="hidden md:flex space-x-12 border-r-2 border-blue-500 dark:border-white px-5">
-              <ul className="flex space-x-8 items-center gap-5">
+              <ul className="flex space-x-8 items-center gap-5 text-md">
                 <a
                   href="/"
-                  className="font-semibold text-lg transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
+                  className=" transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
                 >
                   HOME
                 </a>
 
                 <a
                   href="/about"
-                  className="font-semibold text-lg transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
+                  className=" transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
                 >
                   ABOUT
                 </a>
 
                 <a
                   href="/project"
-                  className="font-semibold text-lg transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
+                  className=" transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
                 >
                   PROJECTS
                 </a>
 
                 <a
                   href="/contact"
-                  className="font-semibold text-lg transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
+                  className=" transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
                 >
                   CONTACT
                 </a>

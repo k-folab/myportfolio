@@ -62,7 +62,7 @@ const Homesection = () => {
             </p>
             <div className=" flex gap-5 items-center max-md:justify-center m-6">
               <Link
-                href="/about"
+                href="/contact"
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-gradient-to-r hover:from-blue-600 hover:to-white hover:text-blue-800 transition duration-300 ease-in-out "
               >
                 Get In Touch
