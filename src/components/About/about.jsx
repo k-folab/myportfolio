@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import reading from "/public/reading.png";
 import coding from "/public/coding.png";
@@ -10,37 +10,64 @@ import music from "/public/music.png";
 
 import Link from "next/link";
 
+const Loader = () => {
+  return (
+    <div className="flex items-center justify-center h-screen dark:bg-blue-900 bg-blue-50">
+      <div className="relative">
+        <div className="w-16 h-16 rounded-full border-t-4 border-b-4 border-transparent border-t-cyan-400 border-b-purple-500 animate-spin"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <span className="text-blue-600 dark:text-white font-poppins font-semibold">
+            Loading...
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const AboutSection = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    //simulate a loading delay
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 500); //2 seconds delay
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Loader />;
   return (
     <div
       id="about"
       className="bg-blue-50 text-blue-700 min-h-screen dark:bg-blue-950 dark:text-white py-16 px-6 md:px-12"
     >
       <div className="max-w-6xl mx-auto font-poppins ">
-        <div className="text-4xl font-bold text-center pb-10">
+        {/* <div className="text-4xl font-bold text-center pb-10">
           ABOUT ME{" "}
           <span className="text-blue-700 dark:text-white text-sm mr-2">●</span>
-        </div>
-        <div className="mt-10 mb-20">
-          <div className="text-4xl font-bold text-center pb-5 transform transition-all duration-300 hover:text-blue-400 hover:rotate-12">
-            ABOUT ME{" "}
-            <span className="text-blue-700 dark:text-white text-sm mr-2">
+        </div> */}
+        <div className="mt-24 mb-8 ">
+          <div className="text-4xl  text-center pb-5 hover:text-blue-400 hover:scale-110 transition-transform duration-300">
+            About Me{" "}
+            {/* <span className="text-blue-700 dark:text-white text-sm mr-2">
               ●
-            </span>
+            </span> */}
           </div>
-          <div className="text-center text-gray-500 dark:text-white text-xl max-sm:text-sm">
+          <div className="text-center text-gray-500 dark:text-white text-xl max-sm:text-sm ">
             Hi, my name is{" "}
-            <span className="text-blue-700 font-bold">AFOLABI KEHINDE.</span> A
-            Front End developer passionate about creating responsive and
-            user-friendly websites and applications. Always learning and
-            growing, I enjoy turning ideas into functional and visually
-            appealing digital experiences.
+            <span className="text-blue-700 font-bold">AFOLABI KEHINDE.</span>{" "}
+            <br /> A Front End developer passionate about creating responsive
+            and user-friendly websites and applications.
           </div>
         </div>
 
+        <div className="border-b-2 border-blue-500 dark:border-white"> </div>
+
         {/* Coding Section */}
-        <div className=" flex-col md:flex-row items-center gap-8 mb-16">
-          <div className=" text-3xl pb-3 font-bold text-center ">
+        <div className=" flex-col md:flex-row items-center gap-8 mt-8 mb-16">
+          <div className=" text-3xl pb-3 text-center ">
             Coding
             <span class="text-blue-700 dark:text-white text-sm ml-2">●</span>
           </div>
@@ -65,14 +92,18 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="text-3xl text-gray-900 dark:text-white text-center pb-10">
+        <div className="border-b-2 border-blue-500 dark:border-white mb-8">
+          {" "}
+        </div>
+
+        <div className="text-3xl max-sm:text-xl text-gray-600 dark:text-white text-center pb-6">
           Things I love to do when I'm not coding
           {/* <span class="text-blue-700 text-sm ml-2">●</span> */}
         </div>
 
         {/* Reading Section */}
         <div className="flex-col md:flex-row items-center gap-8 mb-16">
-          <div className=" text-3xl pb-3 font-bold text-center">
+          <div className=" text-3xl pb-3 text-center">
             Reading
             <span class="text-blue-700 dark:text-white text-sm ml-2">●</span>
           </div>
@@ -96,9 +127,13 @@ const AboutSection = () => {
           </p>
         </div>
 
+        <div className="border-b-2 border-blue-500 dark:border-white mb-8">
+          {" "}
+        </div>
+
         {/* Gaming Section */}
         <div className=" flex-col md:flex-row-reverse items-center gap-8 mb-16">
-          <div className=" text-3xl pb-3 font-bold text-center">
+          <div className=" text-3xl pb-3 text-center">
             Gaming
             <span class="text-blue-700 dark:text-white text-sm ml-2">●</span>
           </div>
@@ -124,34 +159,13 @@ const AboutSection = () => {
           </p>
         </div>
 
-        {/* Traveling Section
-        <div className=" flex-col md:flex-row items-center gap-8 mb-16">
-          <div className=" text-3xl pb-3 font-bold text-center">
-            Traveling<span class="text-blue-700 text-sm ml-2">●</span>
-          </div>
-          <div className="pb-5">
-            <Image
-              src={traveling}
-              alt="travelingimg"
-              width={400}
-              height={100}
-              className="mx-auto hover:scale-110 transition-transform duration-500 rounded-full"
-            />
-          </div>
-          <p className="text-lg text-gray-500 dark:text-white">
-            Traveling is my way of discovering the beauty and diversity of the
-            world. Every trip is an opportunity to experience different
-            cultures, cuisines, and landscapes. From bustling cities to serene
-            nature spots, traveling fills me with stories and memories to
-            cherish. It’s about meeting new people, stepping out of my comfort
-            zone, and gaining a fresh perspective on life. Traveling teaches me
-            to appreciate the simple joys and the rich tapestry of humanity.
-          </p>
-        </div> */}
+        <div className="border-b-2 border-blue-500 dark:border-white mb-8">
+          {" "}
+        </div>
 
         {/* Fitness and Sports Section */}
         <div className=" flex-col md:flex-row-reverse items-center gap-8 mb-16">
-          <div className=" text-3xl pb-3 font-bold text-center">
+          <div className=" text-3xl pb-3 text-center">
             Sports And Fitness
             <span class="text-blue-700 dark:text-white text-sm ml-2">●</span>
           </div>
@@ -175,9 +189,13 @@ const AboutSection = () => {
           </p>
         </div>
 
+        <div className="border-b-2 border-blue-500 dark:border-white mb-8">
+          {" "}
+        </div>
+
         {/* Music Section */}
         <div className=" flex-col md:flex-row items-center gap-8">
-          <div className=" text-3xl pb-3 font-bold text-center">
+          <div className=" text-3xl pb-3 text-center">
             Music
             <span class="text-blue-700 dark:text-white text-sm ml-2">●</span>
           </div>

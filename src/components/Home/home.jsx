@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import linkedin2 from "/public/linkedin2.png";
 import github2 from "/public/github2.png";
 import HTML5 from "/public/HTML5.png";
@@ -10,7 +12,34 @@ import Reactlogo from "/public/Reactlogo.png";
 import Image from "next/image";
 import Link from "next/link";
 
+const Loader = () => {
+  return (
+    <div className="flex items-center justify-center h-screen dark:bg-blue-900 bg-blue-50">
+      <div className="relative">
+        <div className="w-16 h-16 rounded-full border-t-4 border-b-4 border-transparent border-t-cyan-400 border-b-purple-500 animate-spin"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <span className="text-blue-600 dark:text-white font-poppins font-semibold">
+            Loading...
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Homesection = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    //simulate a loading delay
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 500); //2 seconds delay
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Loader />;
   return (
     <div id="home">
       <div className="bg-blue-50 min-h-screen dark:bg-blue-950 dark:text-white flex mt-6 items-center justify-center">
@@ -27,10 +56,11 @@ const Homesection = () => {
             <p className="text-lg max-sm:text-[16px] md:text-xl text-gray-600 dark:text-white m-6">
               A passionate{" "}
               <span className=" font-bold text-blue-700 ">Web Developer </span>
-              with a 3 years experience in creating modern, responsive, and
-              beautiful websites through carefully crafted codes.
+              from my desk in Osun State, Nigeria with 3 years experience in
+              creating modern and responsive websites through carefully crafted
+              codes.
             </p>
-            <div className="mt-10 flex gap-7 items-center max-md:justify-center ml-6">
+            <div className=" flex gap-5 items-center max-md:justify-center m-6">
               <Link
                 href="/about"
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-gradient-to-r hover:from-blue-600 hover:to-white hover:text-blue-800 transition duration-300 ease-in-out "
@@ -80,7 +110,7 @@ const Homesection = () => {
         </div>
         <div className="flex flex-col gap-14">
           <div className="flex justify-around text-blue-700 dark:text-white">
-            <div className=" flex flex-col text-center gap-5 shadow-2xl rounded-3xl p-2">
+            <div className=" flex flex-col text-center dark:bg-blue-900 gap-5 shadow-2xl rounded-3xl p-3">
               <Image
                 src={HTML5}
                 alt="HTML"
@@ -90,7 +120,7 @@ const Homesection = () => {
               />
               <h3>HTML</h3>
             </div>
-            <div className="flex flex-col text-center gap-5 shadow-2xl rounded-3xl p-2">
+            <div className="flex flex-col text-center dark:bg-blue-900 gap-5 shadow-2xl rounded-3xl p-3">
               <Image
                 src={CSS3}
                 alt="CSS"
@@ -100,7 +130,7 @@ const Homesection = () => {
               />
               <h3>CSS</h3>
             </div>
-            <div className="flex flex-col text-center gap-5 shadow-2xl rounded-3xl p-2">
+            <div className="flex flex-col text-center dark:bg-blue-900 gap-5 shadow-2xl rounded-3xl p-3">
               <Image
                 src={TailwindCSS}
                 alt="Tailwindcss"
@@ -112,7 +142,7 @@ const Homesection = () => {
             </div>
           </div>
           <div className="flex justify-around text-blue-700 dark:text-white">
-            <div className=" flex flex-col text-center gap-5 shadow-2xl rounded-3xl p-2">
+            <div className=" flex flex-col text-center dark:bg-blue-900 gap-5 shadow-2xl rounded-3xl p-3">
               <Image
                 src={Reactlogo}
                 alt="React"
@@ -122,7 +152,7 @@ const Homesection = () => {
               />
               <h3>REACT</h3>
             </div>
-            <div className="flex flex-col text-center gap-5 shadow-2xl rounded-3xl p-2">
+            <div className="flex flex-col text-center dark:bg-blue-900 gap-5 shadow-2xl rounded-3xl p-3">
               <Image
                 src={Nextjs}
                 alt="Nextjs"
@@ -132,7 +162,7 @@ const Homesection = () => {
               />
               <h3>NEXT JS</h3>
             </div>
-            <div className="flex flex-col text-center gap-5 shadow-2xl rounded-3xl p-2">
+            <div className="flex flex-col text-center dark:bg-blue-900 gap-5 shadow-2xl rounded-3xl p-3">
               <Image
                 src={JavaScript}
                 alt="JavaScript"

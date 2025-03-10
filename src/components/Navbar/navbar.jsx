@@ -7,6 +7,7 @@ import lightmode from "/public/light-mode.png";
 import darkmode from "/public/dark-mode.png";
 import Image from "next/image";
 import Link from "next/link";
+import Currentdate from "../Currentdate/currentdate";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,15 +29,20 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto text-center">
         <div className="flex justify-between items-center p-10">
-          <a
-            href="/"
-            className=" text-xl font-overlock font-bold hover:scale-110 transition-transform duration-300"
-          >
-            <TypingEffect text={myName} speed={100} />
-          </a>
+          <div className="flex gap-3">
+            <a
+              href="/"
+              className=" text-xl border-r-2 border-blue-500 dark:border-white px-3 font-overlock font-bold hover:scale-110 transition-transform duration-300"
+            >
+              <TypingEffect text={myName} speed={100} />
+            </a>
+            <div>
+              <Currentdate />
+            </div>
+          </div>
 
           <div className="flex gap-5">
-            <div className="hidden md:flex space-x-12 border-r-2 border-blue-500 px-5">
+            <div className="hidden md:flex space-x-12 border-r-2 border-blue-500 dark:border-white px-5">
               <ul className="flex space-x-8 items-center gap-5">
                 <a
                   href="/"
@@ -53,7 +59,7 @@ const Navbar = () => {
                 </a>
 
                 <a
-                  href="/projects"
+                  href="/project"
                   className="font-semibold text-lg transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
                 >
                   PROJECTS
@@ -167,7 +173,7 @@ const Navbar = () => {
               About
             </Link>
             <Link
-              href="/projects"
+              href="/project"
               className="block text-white hover:text-blue-500"
             >
               Projects
