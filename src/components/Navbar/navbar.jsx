@@ -59,6 +59,13 @@ const Navbar = () => {
                 </a>
 
                 <a
+                  href="/experience"
+                  className=" transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
+                >
+                  EXPERIENCE
+                </a>
+
+                <a
                   href="/project"
                   className=" transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
                 >
@@ -162,8 +169,11 @@ const Navbar = () => {
           className="fixed inset-0 font-poppins z-40 bg-black bg-opacity-50 backdrop-blur-sm"
           onClick={handleCloseMenu}
         >
-          <div className="absolute left-0 top-16  h-[calc(100%-4rem)] text-blue-400 p-6 space-y-7 ">
-            <Link href="/" className="block text-white hover:text-blue-500">
+          <div className="absolute left-0 top-16  h-[calc(100%-4rem)] text-blue-400 p-6 space-y-11 ">
+            <Link
+              href="/"
+              className="block text-white hover:text-blue-500 w-full"
+            >
               Home
             </Link>
             <Link
@@ -171,6 +181,12 @@ const Navbar = () => {
               className="block text-white hover:text-blue-500"
             >
               About
+            </Link>
+            <Link
+              href="/experience"
+              className="block text-white hover:text-blue-500"
+            >
+              Experience
             </Link>
             <Link
               href="/project"

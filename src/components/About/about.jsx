@@ -14,7 +14,7 @@ const Loader = () => {
   return (
     <div className="flex items-center justify-center h-screen dark:bg-blue-900 bg-blue-50">
       <div className="relative">
-        <div className="w-16 h-16 rounded-full border-t-4 border-b-4 border-transparent border-t-cyan-400 border-b-purple-500 animate-spin"></div>
+        <div className="w-16 h-16 rounded-full border-t-4 border-b-4 border-transparent border-t-cyan-400 border-b-blue-600 animate-spin"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <span className="text-blue-600 dark:text-white font-poppins font-semibold">
             Loading...
@@ -57,7 +57,9 @@ const AboutSection = () => {
           </div>
           <div className="text-center text-gray-500 dark:text-white text-xl max-sm:text-sm ">
             Hi, my name is{" "}
-            <span className="text-blue-700 font-bold">AFOLABI KEHINDE.</span>{" "}
+            <span className="text-blue-700 dark:text-gray-300 font-bold">
+              AFOLABI KEHINDE.
+            </span>{" "}
             <br /> A Front End developer passionate about creating responsive
             and user-friendly websites and applications.
           </div>
@@ -75,9 +77,7 @@ const AboutSection = () => {
             <Image
               src={coding}
               alt="codingimg"
-              width={400}
-              height={100}
-              className="mx-auto hover:scale-110 transition-transform duration-500 rounded-full"
+              className="mx-auto h-40 w-1/3 max-sm:h-40 hover:scale-110 transition-transform duration-500 rounded-full"
             />
           </div>
           <p className="text-lg max-sm:text-sm text-gray-500 dark:text-white ">
@@ -111,9 +111,7 @@ const AboutSection = () => {
             <Image
               src={reading}
               alt="readingimg"
-              width={400}
-              height={100}
-              className="mx-auto hover:scale-110 transition-transform duration-500 rounded-full"
+              className="mx-auto h-40 w-1/3 max-sm:h-40 hover:scale-110 transition-transform duration-500 rounded-full"
             />
           </div>
           <p className="text-lg max-sm:text-sm text-gray-500 dark:text-white">
@@ -141,9 +139,7 @@ const AboutSection = () => {
             <Image
               src={gaming}
               alt="gamingimg"
-              width={400}
-              height={100}
-              className="mx-auto hover:scale-110 transition-transform duration-500 rounded-full"
+              className="mx-auto h-40 w-1/3 max-sm:h-40 hover:scale-110 transition-transform duration-500 rounded-full"
             />
           </div>
           <p className="text-lg max-sm:text-sm text-gray-500 dark:text-white">
@@ -173,9 +169,7 @@ const AboutSection = () => {
             <Image
               src={sport}
               alt="sportimg"
-              width={400}
-              height={100}
-              className="mx-auto hover:scale-110 transition-transform duration-500 rounded-full"
+              className="mx-auto h-40 w-1/3 max-sm:h-40 hover:scale-110 transition-transform duration-500 rounded-full"
             />
           </div>
           <p className="text-lg max-sm:text-sm text-gray-500 dark:text-white">
@@ -203,9 +197,7 @@ const AboutSection = () => {
             <Image
               src={music2}
               alt="music2img"
-              width={400}
-              height={100}
-              className="mx-auto hover:scale-110 transition-transform duration-500 rounded-full"
+              className="mx-auto h-40 w-1/3 max-sm:h-40  hover:scale-110 transition-transform duration-500 rounded-full"
             />
           </div>
           <p className="text-lg max-sm:text-sm text-gray-500 dark:text-white">

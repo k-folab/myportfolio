@@ -16,7 +16,7 @@ const Loader = () => {
   return (
     <div className="flex items-center justify-center h-screen dark:bg-blue-900 bg-blue-50">
       <div className="relative">
-        <div className="w-16 h-16 rounded-full border-t-4 border-b-4 border-transparent border-t-cyan-400 border-b-purple-500 animate-spin"></div>
+        <div className="w-16 h-16 rounded-full border-t-4 border-b-4 border-transparent border-t-cyan-400 border-b-blue-600 animate-spin"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <span className="text-blue-600 dark:text-white font-poppins font-semibold">
             Loading...
@@ -96,25 +96,25 @@ const ContactSection = () => {
         <div className="bg-blue-600 dark:bg-blue-900 text-white shadow-xl w-1/2 rounded-2xl max-sm:w-full hover:scale-105 transition-transform duration-300">
           <div className="flex flex-col p-10 gap-10">
             <div className="flex gap-2 items-center">
-              <FaMapMarkerAlt className="text-2xl" />
+              <FaMapMarkerAlt className="text-2xl hover:scale-110 transition-transform" />
               <h1>Ile Ife, Osun state, Nigeria.</h1>
             </div>
             <div className="flex gap-2 items-center">
-              <FaEnvelope className="text-2xl" />
+              <FaEnvelope className="text-2xl hover:scale-110 transition-transform" />
               <h1>emmanuelkehinde235@gmail.com</h1>
             </div>
             <div className="flex gap-2 items-center">
-              <FaGithub className="text-2xl dark:text-blue" />
+              <FaGithub className="text-2xl hover:scale-110 transition-transform" />
               <Link href="https://github.com/k-folab">Github</Link>
             </div>
             <div className="flex gap-2 items-center">
-              <FaLinkedin className="text-2xl dark:text-blue" />
+              <FaLinkedin className="text-2xl hover:scale-110 transition-transform" />
               <Link href="https://www.linkedin.com/in/kehinde-afolabi-3bab072b2">
                 LinkedIn
               </Link>
             </div>
             <div className="flex gap-2 items-center">
-              <FaPhone className="text-2xl" />
+              <FaPhone className="text-2xl hover:scale-110 transition-transform" />
               <h1>+234 704 983 4715</h1>
             </div>
           </div>

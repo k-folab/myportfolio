@@ -10,7 +10,7 @@ const Loader = () => {
   return (
     <div className="flex items-center justify-center h-screen dark:bg-blue-900 bg-blue-50">
       <div className="relative">
-        <div className="w-16 h-16 rounded-full border-t-4 border-b-4 border-transparent border-t-cyan-400 border-b-purple-500 animate-spin"></div>
+        <div className="w-16 h-16 rounded-full border-t-4 border-b-4 border-transparent border-t-cyan-400 border-b-blue-600 animate-spin"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <span className="text-blue-600 dark:text-white font-poppins font-semibold">
             Loading...
