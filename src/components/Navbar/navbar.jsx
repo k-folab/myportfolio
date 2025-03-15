@@ -79,7 +79,7 @@ const Navbar = () => {
                   CONTACT
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1xamvgpYA2ykbIEDCowV-1YIbdvJqzH9_/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/14l8Yrk3AEoLVtjrYBu-4BjKsPS-_XCDr/view?usp=drive_link"
                   className=" transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
                 >
                   RESUME
@@ -207,7 +207,7 @@ const Navbar = () => {
               Contact
             </Link>
             <Link
-              href="https://drive.google.com/file/d/1xamvgpYA2ykbIEDCowV-1YIbdvJqzH9_/view?usp=drive_link"
+              href="https://drive.google.com/file/d/14l8Yrk3AEoLVtjrYBu-4BjKsPS-_XCDr/view?usp=drive_link"
               className="block text-white hover:text-blue-500"
             >
               Resume

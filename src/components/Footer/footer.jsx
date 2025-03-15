@@ -94,7 +94,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="https://drive.google.com/file/d/1xamvgpYA2ykbIEDCowV-1YIbdvJqzH9_/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/14l8Yrk3AEoLVtjrYBu-4BjKsPS-_XCDr/view?usp=drive_link"
                   className="hover:text-blue-500 transition"
                 >
                   Resume
