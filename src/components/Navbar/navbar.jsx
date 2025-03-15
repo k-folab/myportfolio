@@ -78,6 +78,12 @@ const Navbar = () => {
                 >
                   CONTACT
                 </a>
+                <a
+                  href="https://drive.google.com/file/d/1xamvgpYA2ykbIEDCowV-1YIbdvJqzH9_/view?usp=drive_link"
+                  className=" transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
+                >
+                  RESUME
+                </a>
               </ul>
             </div>
 
@@ -111,7 +117,7 @@ const Navbar = () => {
               {/* Theme Toggle */}
               <button
                 onClick={toggleTheme}
-                className="py-2 px-3 bg-blue-500 text-white dark:bg-white dark:text-blue-500 border-none text-xs max-sm:h-7 font-poppins rounded-full"
+                className="py-2 px-3 bg-blue-600 text-white dark:bg-white dark:text-blue-500 border-none text-xs max-sm:h-7 font-poppins rounded-full"
               >
                 {theme === "dark" ? (
                   <Image
@@ -199,6 +205,12 @@ const Navbar = () => {
               className="block text-white hover:text-blue-500"
             >
               Contact
+            </Link>
+            <Link
+              href="https://drive.google.com/file/d/1xamvgpYA2ykbIEDCowV-1YIbdvJqzH9_/view?usp=drive_link"
+              className="block text-white hover:text-blue-500"
+            >
+              Resume
             </Link>
           </div>
         </div>

@@ -49,13 +49,15 @@ const Homesection = () => {
               <div className="text-3xl text-gray-500 dark:text-white tracking-wide font-bold">
                 Hey, I'm
               </div>
-              <div className="text-4xl text-blue-600  tracking-wide font-bold">
+              <div className="text-4xl text-blue-600 dark:text-blue-300 tracking-wide font-bold">
                 KEHINDE AFOLABI
               </div>
             </div>
             <p className="text-lg max-sm:text-[16px] md:text-xl text-gray-600 dark:text-white m-6">
               A{" "}
-              <span className=" font-bold text-blue-700 ">Web Developer </span>
+              <span className=" font-bold text-blue-700 dark:text-blue-300">
+                Web Developer{" "}
+              </span>
               from my desk in Osun State, Nigeria with 3 years experience in
               creating modern and responsive websites through carefully crafted
               codes.

@@ -46,7 +46,7 @@ const ProjectSection = () => {
       <div className="mb-8 mt-24 text-4xl text-blue-600 dark:text-white text-center hover:text-blue-400 hover:scale-110 transition-transform duration-300">
         <h2>My Projects</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
         {/* Project 1 */}
         <div className="bg-white dark:bg-blue-900 rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300">
           <Image
@@ -55,13 +55,12 @@ const ProjectSection = () => {
             className="w-full h-60 object-cover"
           />
           <div className="p-6">
-            <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+            <h3 className="text-xl text-blue-600 dark:text-blue-400 mb-2">
               Invoice Generator
             </h3>
-            <p className="text-gray-600 dark:text-white mb-4">
-              A free online tool to create and send professional invoices with a
-              built-in signature feature. Includes customizable templates and
-              dark mode support.
+            <p className="text-gray-600 text-sm dark:text-white mb-4">
+              A web app that simplifies invoice creation with responsive design,
+              customizable themes, and real-time calculations
             </p>
             <Link
               href="https://free-invoice-generator.netlify.app/"
@@ -80,10 +79,10 @@ const ProjectSection = () => {
             className="w-full h-60 object-cover"
           />
           <div className="p-6">
-            <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
+            <h3 className="text-xl text-blue-600 dark:text-blue-400 mb-2">
               Cryptocurrency Dashboard
             </h3>
-            <p className="text-gray-600 dark:text-white mb-4">
+            <p className="text-gray-600 text-sm dark:text-white mb-4">
               A real-time dashboard displaying market trends, a search bar to
               find specific coins, and interactive charts for data visualization
             </p>
@@ -104,11 +103,13 @@ const ProjectSection = () => {
             className="w-full h-60 object-cover"
           />
           <div className="p-6">
-            <h3 className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-2">
-              My Portfolio
+            <h3 className="text-xl text-blue-600 dark:text-blue-400 mb-2">
+              Portfolio
             </h3>
-            <p className="text-gray-600 dark:text-white mb-4">
-              This particular portfolio website that you are on was built by me.
+            <p className="text-gray-600 text-sm dark:text-white mb-4">
+              This particular portfolio website that you are on was built by me
+              and for me. A personal portfolio website built with NextJS and
+              TailwindCSS
             </p>
             <Link
               href=""

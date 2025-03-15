@@ -57,7 +57,7 @@ const AboutSection = () => {
           </div>
           <div className="text-center text-gray-500 dark:text-white text-xl max-sm:text-sm ">
             Hi, my name is{" "}
-            <span className="text-blue-700 dark:text-gray-300 font-bold">
+            <span className="text-blue-700 dark:text-blue-300 font-bold">
               AFOLABI KEHINDE.
             </span>{" "}
             <br /> A Front End developer passionate about creating responsive
@@ -65,7 +65,7 @@ const AboutSection = () => {
           </div>
         </div>
 
-        <div className="border-b-2 border-blue-500 dark:border-white"> </div>
+        <div className="border-b border-blue-500 dark:border-white"> </div>
 
         {/* Coding Section */}
         <div className=" flex-col md:flex-row items-center gap-8 mt-8 mb-16">
@@ -90,11 +90,18 @@ const AboutSection = () => {
             that impact lives and businesses. It’s not just a career but a craft
             I am deeply committed to mastering.
           </p>
+          <p className="pt-8 text-lg max-sm:text-sm text-gray-500 dark:text-white ">
+            <p className="pb-1 text-2xl max-sm:text-lg text-blue-600 dark:text-blue-300">
+              Building myself
+            </p>
+            I'm currently mastering TypeScript and deepening my backend
+            development expertise to build scalable and efficient applications.
+            I'm focusing on writing type-safe code and my goal is to develop
+            robust, secure, and high-performing backend systems.
+          </p>
         </div>
 
-        <div className="border-b-2 border-blue-500 dark:border-white mb-8">
-          {" "}
-        </div>
+        <div className="border-b border-blue-500 dark:border-white mb-8"> </div>
 
         <div className="text-3xl max-sm:text-xl text-gray-600 dark:text-white text-center pb-6">
           Things I love to do when I'm not coding
@@ -102,7 +109,7 @@ const AboutSection = () => {
         </div>
 
         {/* Reading Section */}
-        <div className="flex-col md:flex-row items-center gap-8 mb-16">
+        <div className="flex-col md:flex-row gap-8 mb-16">
           <div className=" text-3xl pb-3 text-center">
             Reading
             <span class="text-blue-700 dark:text-white text-sm ml-2">●</span>
@@ -125,9 +132,7 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="border-b-2 border-blue-500 dark:border-white mb-8">
-          {" "}
-        </div>
+        <div className="border-b border-blue-500 dark:border-white mb-8"> </div>
 
         {/* Gaming Section */}
         <div className=" flex-col md:flex-row-reverse items-center gap-8 mb-16">
@@ -135,7 +140,7 @@ const AboutSection = () => {
             Gaming
             <span class="text-blue-700 dark:text-white text-sm ml-2">●</span>
           </div>
-          <div className="pb-5">
+          <div className="pb-5 ">
             <Image
               src={gaming}
               alt="gamingimg"
@@ -155,9 +160,7 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="border-b-2 border-blue-500 dark:border-white mb-8">
-          {" "}
-        </div>
+        <div className="border-b border-blue-500 dark:border-white mb-8"> </div>
 
         {/* Fitness and Sports Section */}
         <div className=" flex-col md:flex-row-reverse items-center gap-8 mb-16">
@@ -183,9 +186,7 @@ const AboutSection = () => {
           </p>
         </div>
 
-        <div className="border-b-2 border-blue-500 dark:border-white mb-8">
-          {" "}
-        </div>
+        <div className="border-b border-blue-500 dark:border-white mb-8"> </div>
 
         {/* Music Section */}
         <div className=" flex-col md:flex-row items-center gap-8">

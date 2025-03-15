@@ -46,11 +46,19 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSending(true);
 
+    const emailParams = {
+      to_name: "Afolabi Kehinde", // Replace with your actual name (recipient)
+      from_name: formData.name, // Sender's name
+      from_email: formData.email, // Include sender's email
+      phone: formData.phone, // Include phone if needed
+      message: formData.message, // Message content
+    };
+
     emailjs
       .send(
         "service_trrmhnh", // Replace with your EmailJS Service ID
         "template_8z1ogio", // Replace with your EmailJS Template ID
-        formData,
+        emailParams,
         "gPV72eYyWYmuok__T" // Replace with your EmailJS Public Key (User ID)
       )
       .then(
