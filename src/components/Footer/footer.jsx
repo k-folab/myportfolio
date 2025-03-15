@@ -37,12 +37,12 @@ const Footer = () => {
               </div>{" "}
               <div>emmanuelkehinde235@gmail.com</div>
             </div>
-            <div className="mt-4 text-gray-500 dark:text-white flex max-sm:justify-center gap-2">
+            {/* <div className="mt-4 text-gray-500 dark:text-white flex max-sm:justify-center gap-2">
               <div>
                 <FaPhone className="text-xl hover:scale-110 transition-transform" />
               </div>{" "}
               <div>+234 704 983 4715</div>
-            </div>
+            </div> */}
           </div>
 
           {/* <div className="max-sm:border-b max-sm:border-blue-500 max-sm:dark:border-white mb-4">
@@ -124,7 +124,7 @@ const Footer = () => {
                 <FaLinkedin className="text-2xl text-blue-700 dark:text-white hover:scale-110 transition-transform" />
               </Link>
               <Link href="https://github.com/k-folab" target="_blank">
-                <FaGithub className="text-2xl dark:text-blue hover:scale-110 transition-transform" />
+                <FaGithub className="text-2xl text-black dark:text-white hover:scale-110 transition-transform" />
               </Link>
               <Link href="https://wa.me/07049834715" target="_blank">
                 <FaWhatsapp className="text-2xl text-green-500 dark:text-white hover:scale-110 transition-transform" />
@@ -144,7 +144,7 @@ const Footer = () => {
                 <FaInstagram className="text-2xl text-red-500 dark:text-white hover:scale-110 transition-transform" />
               </Link>
               <Link href="https://tiktok.com" target="_blank">
-                <FaTiktok className="text-2xl dark:text-blue hover:scale-110 transition-transform" />
+                <FaTiktok className="text-2xl text-black dark:text-white hover:scale-110 transition-transform" />
               </Link>
             </div>
           </div>

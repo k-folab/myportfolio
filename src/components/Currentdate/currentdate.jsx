@@ -22,7 +22,7 @@ const Currentdate = () => {
   const month = monthNames[today.getMonth()];
 
   return (
-    <div className="text-lg text-blue-600 dark:text-gray-200">
+    <div className="text-xl max-sm:text-sm items-center text-blue-600 dark:text-gray-200">
       {day}, {month}
     </div>
   );

@@ -99,13 +99,13 @@ const ContactSection = () => {
         <h2>Contact Me</h2>
       </div>
 
-      <div className="w-full h-screen bg-white shadow-xl rounded-2xl flex gap-4 max-sm:flex-col ">
+      <div className="w-full h-screen max-lg:h-full bg-white shadow-xl rounded-2xl flex gap-4 max-sm:flex-col max-lg:flex-col max-lg:items-center ">
         {/* info div */}
-        <div className="bg-blue-600 dark:bg-blue-900 text-white shadow-xl w-1/2 rounded-2xl max-sm:w-full hover:scale-105 transition-transform duration-300">
-          <div className="flex flex-col p-10 gap-10">
+        <div className="bg-blue-600 dark:bg-blue-900 text-white shadow-xl w-1/2 rounded-2xl max-sm:w-full max-sm:mb-2 hover:scale-105 transition-transform duration-300">
+          <div className="flex flex-col p-10 gap-10 max-sm:text-sm max-lg:text-[15px]">
             <div className="flex gap-2 items-center">
               <FaMapMarkerAlt className="text-2xl hover:scale-110 transition-transform" />
-              <h1>Ile Ife, Osun state, Nigeria.</h1>
+              <h1> Osun state, Nigeria.</h1>
             </div>
             <div className="flex gap-2 items-center">
               <FaEnvelope className="text-2xl hover:scale-110 transition-transform" />
@@ -129,8 +129,8 @@ const ContactSection = () => {
         </div>
 
         {/* form div */}
-        <div className="w-1/2 max-sm:w-full p-10 flex flex-col items-center justify-center">
-          <div className="p-10 ">
+        <div className="w-1/2 max-sm:w-full p-10 max-md:h-1/2 flex flex-col items-center justify-center max-lg:pt-32">
+          <div className="p-10  max-sm:pb-4 ">
             {" "}
             <div className="text-blue-500 dark:text-blue-700 text-xl">
               {" "}

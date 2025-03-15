@@ -28,21 +28,21 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto text-center">
-        <div className="flex justify-between items-center p-10">
+        <div className="flex justify-between  items-center p-10">
           <div className="flex gap-3">
             <a
               href="/"
-              className=" text-xl border-r-2 border-blue-500 dark:border-white px-3 font-overlock font-bold hover:scale-110 transition-transform duration-300"
+              className=" text-xl max-sm:text-sm border-r-2 border-blue-500 dark:border-white px-3 font-overlock font-bold hover:scale-110 transition-transform duration-300"
             >
               <TypingEffect text={myName} speed={100} />
             </a>
-            <div>
+            <div className="">
               <Currentdate />
             </div>
           </div>
 
-          <div className="flex gap-2">
-            <div className="hidden md:flex space-x-12 border-r-2 border-blue-500 dark:border-white px-5">
+          <div className="flex gap-2 ">
+            <div className="hidden md:flex  space-x-12 border-r-2 border-blue-500 dark:border-white px-5">
               <ul className="flex space-x-8 items-center gap-5 text-md">
                 <a
                   href="/"
@@ -79,7 +79,7 @@ const Navbar = () => {
                   CONTACT
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/14l8Yrk3AEoLVtjrYBu-4BjKsPS-_XCDr/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1GLizus7B1hKqSz9YSYUUSaxqA3L8xxgh/view?usp=drive_link"
                   className=" transform transition-all duration-300 hover:text-blue-400 hover:rotate-12"
                 >
                   RESUME
@@ -112,7 +112,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden ">
             <div className="flex gap-5">
               {/* Theme Toggle */}
               <button
@@ -207,7 +207,7 @@ const Navbar = () => {
               Contact
             </Link>
             <Link
-              href="https://drive.google.com/file/d/14l8Yrk3AEoLVtjrYBu-4BjKsPS-_XCDr/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1GLizus7B1hKqSz9YSYUUSaxqA3L8xxgh/view?usp=drive_link"
               className="block text-white hover:text-blue-500"
             >
               Resume

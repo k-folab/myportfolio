@@ -63,9 +63,8 @@ const Homesection = () => {
               <span className=" font-bold text-blue-700 dark:text-blue-300">
                 Web Developer{" "}
               </span>
-              from my desk in Osun State, Nigeria <br /> with 3 years experience
-              in creating modern and responsive websites through carefully
-              crafted codes.
+              with 3 years experience in creating modern and responsive websites
+              through carefully crafted codes.
             </p>
             <div className=" flex gap-5 items-center max-md:justify-center">
               <Link
@@ -101,13 +100,13 @@ const Homesection = () => {
             </div>
           </div>
 
-          <div className="border-4 border-blue-500 rounded-lg mt-8 md:mt-0 md:ml-12">
+          {/* <div className="border-4 border-blue-500 rounded-lg mt-8 md:mt-0 md:ml-12">
             <Image
               src={meme3}
               alt="img"
               className="w-80 md:w-96 h-96  md:max-h-full bg-gray-200 rounded-lg"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="bg-blue-50 dark:bg-blue-950 font-poppins pb-16">

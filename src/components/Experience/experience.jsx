@@ -39,7 +39,7 @@ const ExperienceSection = () => {
             whose guidance has been invaluable in my coding journey from the
             very beginning. My expertise includes:
           </p>
-          <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 text-lg font-semibold text-center dark:text-white">
+          <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 text-lg max-sm:text-sm font-semibold text-center dark:text-white">
             <li className="bg-blue-100 text-blue-500 dark:bg-blue-800 dark:text-white px-6 py-3 rounded-lg">
               HTML
             </li>
@@ -90,7 +90,7 @@ const ExperienceSection = () => {
 
         {/*Web dev page */}
         <div className="mb-16">
-          <h3 className="text-2xl text-blue-600 dark:text-white mb-6">
+          <h3 className="text-2xl max-sm:text-md text-blue-600 dark:text-white mb-6">
             Web Development Projects
             <span className="text-blue-600 dark:text-white text-sm ml-2">
               ●
@@ -125,7 +125,7 @@ const ExperienceSection = () => {
 
         {/* Education Section */}
         <div className="mb-16">
-          <h3 className="text-2xl text-blue-600 dark:text-white mb-6">
+          <h3 className="text-2xl max-sm:text-md text-blue-600 dark:text-white mb-6">
             Education{" "}
             <span className="text-blue-600 dark:text-white text-sm ml-2">
               ●
