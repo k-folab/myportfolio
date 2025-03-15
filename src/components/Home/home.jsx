@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import TypingEffect from "../Typingeffect";
+import meme3 from "/public/meme3.png";
 import linkedin2 from "/public/linkedin2.png";
 import github2 from "/public/github2.png";
 import HTML5 from "/public/HTML5.png";
@@ -40,29 +42,32 @@ const Homesection = () => {
   }, []);
 
   if (loading) return <Loader />;
+
+  const theName = "Kehinde Afolabi";
+
   return (
-    <div id="home">
-      <div className="bg-blue-50 pt-36 pb-10 dark:bg-blue-950 dark:text-white flex items-center justify-center">
-        <div className="max-w-6xl flex flex-row max-sm:gap-10 max-sm:flex-col-reverse font-poppins items-center">
+    <div id="home" className="animate-slide-in">
+      <div className="bg-blue-50 pt-36 pb-16 dark:bg-blue-950 dark:text-white flex items-center justify-center">
+        <div className="max-w-6xl flex flex-row max-sm:gap-10 max-sm:flex-col-reverse font-poppins items-center justify-between">
           <div className="flex-1 text-center md:text-left">
-            <div className="font-poppins m-6">
-              <div className="text-3xl text-gray-500 dark:text-white tracking-wide font-bold">
+            <div className="font-poppins mb-4">
+              <div className="text-2xl text-gray-500 dark:text-white tracking-wide font-bold">
                 Hey, I'm
               </div>
-              <div className="text-4xl text-blue-600 dark:text-blue-300 tracking-wide font-bold">
-                KEHINDE AFOLABI
+              <div className="text-3xl text-blue-600 dark:text-blue-300 tracking-wide font-bold">
+                <TypingEffect text={theName} speed={200} />
               </div>
             </div>
-            <p className="text-lg max-sm:text-[16px] md:text-xl text-gray-600 dark:text-white m-6">
+            <p className="text-lg max-sm:text-[16px] md:text-xl text-gray-600 dark:text-white mb-4 max-sm:mx-10">
               A{" "}
               <span className=" font-bold text-blue-700 dark:text-blue-300">
                 Web Developer{" "}
               </span>
-              from my desk in Osun State, Nigeria with 3 years experience in
-              creating modern and responsive websites through carefully crafted
-              codes.
+              from my desk in Osun State, Nigeria <br /> with 3 years experience
+              in creating modern and responsive websites through carefully
+              crafted codes.
             </p>
-            <div className=" flex gap-5 items-center max-md:justify-center m-6">
+            <div className=" flex gap-5 items-center max-md:justify-center">
               <Link
                 href="/contact"
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-gradient-to-r hover:from-blue-600 hover:to-white hover:text-blue-800 transition duration-300 ease-in-out "
@@ -96,17 +101,17 @@ const Homesection = () => {
             </div>
           </div>
 
-          <div className="flex-1 mt-8 md:mt-0 md:ml-12">
-            <img
-              src="https://via.placeholder.com/400x400"
+          <div className="border-4 border-blue-500 rounded-lg mt-8 md:mt-0 md:ml-12">
+            <Image
+              src={meme3}
               alt="img"
-              className="w-96 md:w-full h-60  md:h-70 bg-gray-200 rounded-full"
+              className="w-80 md:w-96 h-96  md:max-h-full bg-gray-200 rounded-lg"
             />
           </div>
         </div>
       </div>
       <div className="bg-blue-50 dark:bg-blue-950 font-poppins pb-16">
-        <div className="text-center text-2xl pb-8 font-bold dark:text-white text-blue-700">
+        <div className="text-center text-2xl pb-4 font-bold dark:text-white text-blue-700">
           Tech Stack{" "}
           <span className="text-blue-700 dark:text-white text-sm mr-2">●</span>
         </div>

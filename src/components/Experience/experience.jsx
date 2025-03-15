@@ -6,7 +6,7 @@ const ExperienceSection = () => {
   return (
     <section
       id="experience"
-      className="bg-blue-50 dark:bg-blue-950 dark:text-white py-20 px-6 md:px-12 font-poppins"
+      className="animate-slide-in bg-blue-50 dark:bg-blue-950 dark:text-white py-20 px-6 md:px-12 font-poppins"
     >
       <div className="max-w-6xl mx-auto mt-20">
         <h2 className="text-4xl text-blue-600 dark:text-white text-center mb-10">

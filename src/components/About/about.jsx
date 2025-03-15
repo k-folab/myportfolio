@@ -41,7 +41,7 @@ const AboutSection = () => {
   return (
     <div
       id="about"
-      className="bg-blue-50 text-blue-700 min-h-screen dark:bg-blue-950 dark:text-white py-16 px-6 md:px-12"
+      className="animate-slide-in bg-blue-50 text-blue-700 min-h-screen dark:bg-blue-950 dark:text-white py-16 px-6 md:px-12"
     >
       <div className="max-w-6xl mx-auto font-poppins ">
         {/* <div className="text-4xl font-bold text-center pb-10">

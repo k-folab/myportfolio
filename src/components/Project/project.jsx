@@ -38,7 +38,7 @@ const ProjectSection = () => {
   return (
     <div
       id="project"
-      className="bg-blue-50 font-poppins dark:bg-blue-950 dark:text-white py-16 px-6 md:px-12"
+      className="animate-slide-in bg-blue-50 font-poppins dark:bg-blue-950 dark:text-white py-16 px-6 md:px-12"
     >
       {/* <h2 className="text-4xl text-center text-blue-600 dark:text-blue-400 font-bold mb-12">
         My Projects

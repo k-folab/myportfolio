@@ -93,7 +93,7 @@ const ContactSection = () => {
   return (
     <div
       id="contact"
-      className="bg-blue-50 font-poppins dark:bg-blue-950 dark:text-white py-16 px-6 md:px-12"
+      className="animate-slide-in bg-blue-50 font-poppins dark:bg-blue-950 dark:text-white py-16 px-6 md:px-12"
     >
       <div className="mb-8 mt-24 text-4xl text-blue-600 dark:text-white text-center hover:text-blue-400 hover:scale-110 transition-transform duration-300">
         <h2>Contact Me</h2>
