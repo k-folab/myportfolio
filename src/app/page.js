@@ -716,7 +716,7 @@ export default function Home() {
             >
               <div>
                 <h1 className="font-bold">SITEMAP</h1>
-                <div className="pt-5 flex flex-col font-medium">
+                <div className="pt-5 flex flex-col space-y-1.5 font-medium">
                   <a className="hover:text-gray-500" href="#home">
                     HOME
                   </a>
@@ -745,7 +745,7 @@ export default function Home() {
             >
               <div>
                 <h1 className="font-bold">SOCIALS</h1>
-                <div className="pt-5 font-medium flex flex-col">
+                <div className="pt-5 font-medium flex flex-col space-y-1.5">
                   <Link
                     href="https://github.com/k-folab"
                     target="_blank"
@@ -803,7 +803,7 @@ export default function Home() {
               <div>
                 <h1 className="font-bold">CONTACT</h1>
                 <div className="pt-5">
-                  <h2>emmanuelkehinde235@gmail.com</h2>
+                  <h2 className="text-sm">emmanuelkehinde235@gmail.com</h2>
                   <h2>+234 704 9834 715</h2>
                 </div>
               </div>
