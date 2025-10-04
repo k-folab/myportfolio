@@ -4,11 +4,8 @@ import Image from "next/image";
 import reading from "/public/reading.png";
 import coding from "/public/coding.png";
 import gaming from "/public/gaming.png";
-import traveling from "/public/traveling.png";
 import sport from "/public/sport.png";
 import music2 from "/public/music2.png";
-
-import Link from "next/link";
 
 const Loader = () => {
   return (
