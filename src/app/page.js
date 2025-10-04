@@ -73,7 +73,7 @@ export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="bg-gray-200 font-poppins p-6">
+    <div className="bg-gray-200 font-poppins p-6 overflow-x-hidden">
       <motion.div
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
