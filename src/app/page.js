@@ -90,13 +90,13 @@ export default function Home() {
           >
             <div className="flex items-center">
               <Image src={kay} alt="logoimg" width={32} />
-              <div className="pt-2 text-lg sm:text-xl">ehinde</div>
+              <div className="text-black pt-2 text-lg sm:text-xl">ehinde</div>
             </div>
           </motion.div>
 
           {/* Desktop Nav */}
           <ul
-            className="hidden md:flex gap-6 lg:gap-14 pr-4 lg:pr-12 text-sm sm:text-base"
+            className="text-black hidden md:flex gap-6 lg:gap-14 pr-4 lg:pr-12 text-sm sm:text-base"
             id="nav"
           >
             <li>
@@ -187,7 +187,7 @@ export default function Home() {
         transition={{ duration: 1 }}
       >
         <section className="pt-14" id="home">
-          <div className="font-bold text-4xl sm:text-5xl lg:text-7xl tracking-tight">
+          <div className="text-black font-bold text-4xl sm:text-5xl lg:text-7xl tracking-tight">
             Front End <br /> Developer
           </div>
 
@@ -258,7 +258,7 @@ export default function Home() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <div className="pt-16 flex flex-col md:flex-row md:justify-between gap-6">
-            <div className="font-bold text-4xl sm:text-6xl lg:text-7xl tracking-tight">
+            <div className="text-black font-bold text-4xl sm:text-6xl lg:text-7xl tracking-tight">
               FEATURED
               <br /> WORKS
             </div>
@@ -280,7 +280,7 @@ export default function Home() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <div className="bg-gray-300 pt-10">
-            <div className="flex flex-col md:flex-row md:justify-between font-bold p-6 sm:p-10 gap-6">
+            <div className="text-black flex flex-col md:flex-row md:justify-between font-bold p-6 sm:p-10 gap-6">
               <div className="text-3xl sm:text-4xl lg:text-5xl">01</div>
               <div className="text-3xl sm:text-4xl lg:text-5xl">
                 Invoice
@@ -290,7 +290,7 @@ export default function Home() {
 
             <div className="flex flex-col md:flex-row md:justify-between font-bold pt-10 md:pt-32 p-6 sm:p-10 gap-8">
               <div className="text-base sm:text-xl md:text-2xl">
-                <h1 className="font-medium tracking-tighter">
+                <h1 className="font-medium tracking-tighter text-black">
                   A web app that simplifies invoice creation
                   <br /> with responsive design, customizable themes,
                   <br /> and real-time calculations
@@ -338,7 +338,7 @@ export default function Home() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <div className="bg-gray-500 pt-10">
-            <div className="flex flex-col md:flex-row md:justify-between font-bold p-6 sm:p-10 gap-6">
+            <div className="text-black flex flex-col md:flex-row md:justify-between font-bold p-6 sm:p-10 gap-6">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl">02</h1>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl">
                 Cryptocurrency
@@ -348,7 +348,7 @@ export default function Home() {
 
             <div className="flex flex-col md:flex-row md:justify-between font-bold pt-10 md:pt-32 p-6 sm:p-10 gap-8">
               <div className="text-base sm:text-xl md:text-2xl">
-                <h1 className="font-medium tracking-tighter">
+                <h1 className="font-medium tracking-tighter text-black">
                   A real-time dashboard displaying market trends,
                   <br /> a search bar to find specific coins, and interactive
                   <br /> charts for data visualization
@@ -456,7 +456,7 @@ export default function Home() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <div className="pt-16 flex flex-col md:flex-row md:justify-around md:items-start gap-6 text-center md:text-left">
-            <div className="font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight">
+            <div className="text-black font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight">
               SERVICES
             </div>
             <div className="font-medium text-lg sm:text-xl md:text-2xl text-gray-500 tracking-tighter md:pt-20">
@@ -549,7 +549,7 @@ export default function Home() {
               </div>
 
               {/* Text */}
-              <div className="max-w-2xl font-medium text-base sm:text-lg md:text-xl leading-relaxed text-center md:text-left">
+              <div className="text-black max-w-2xl font-medium text-base sm:text-lg md:text-xl leading-relaxed text-center md:text-left">
                 I’m a frontend developer with over four years of experience. I
                 specialize in building modern, responsive, and user-friendly web
                 applications. My toolkit includes React, Next.js, Tailwind CSS,
@@ -700,7 +700,7 @@ export default function Home() {
               ease: "easeInOut",
             }}
           >
-            <div className="text-5xl md:text-9xl text-center font-bold w-full">
+            <div className="text-5xl md:text-9xl text-center text-black font-bold w-full">
               KEHINDE AFOLABI
             </div>
           </motion.div>
@@ -714,9 +714,9 @@ export default function Home() {
               transition={{ duration: 1.5 }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              <div>
+              <div className="text-black">
                 <h1 className="font-bold">SITEMAP</h1>
-                <div className="pt-5 flex flex-col space-y-1.5 font-medium">
+                <div className="pt-5 flex flex-col space-y-1.5 font-medium ">
                   <a className="hover:text-gray-500" href="#home">
                     HOME
                   </a>
@@ -743,9 +743,9 @@ export default function Home() {
               transition={{ duration: 1.5, delay: 0.5 }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              <div>
+              <div className="text-black">
                 <h1 className="font-bold">SOCIALS</h1>
-                <div className="pt-5 font-medium flex flex-col space-y-1.5">
+                <div className="pt-5 font-medium flex flex-col space-y-1.5 ">
                   <Link
                     href="https://github.com/k-folab"
                     target="_blank"
@@ -785,7 +785,7 @@ export default function Home() {
               transition={{ duration: 1.5, delay: 1 }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              <div>
+              <div className="text-black">
                 <h1 className="font-bold">FIND ME</h1>
                 <div className="pt-5 font-medium">
                   <h2>OSUN STATE, NIGERIA</h2>
@@ -800,7 +800,7 @@ export default function Home() {
               transition={{ duration: 1.5, delay: 1.5 }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              <div>
+              <div className="text-black">
                 <h1 className="font-bold">CONTACT</h1>
                 <div className="pt-5">
                   <h2 className="text-sm">emmanuelkehinde235@gmail.com</h2>
