@@ -9,6 +9,7 @@ import hero from "/public/Hero.png";
 import kay from "/public/k.png";
 import invoice from "/public/invoice.png";
 import crypto from "/public/crypto.png";
+import food from "/public/food.jpg";
 import web from "/public/web.png";
 import res from "/public/res.png";
 import vis from "/public/vis.png";
@@ -437,6 +438,63 @@ export default function Home() {
                   <Image
                     src={cart3}
                     alt="cryptoimg"
+                    className="rounded-lg w-full max-w-md mx-auto"
+                  />
+                </div>
+              </Atropos>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Project4 */}
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          <div className="bg-gray-900 pt-10">
+            <div className="text-white flex flex-col md:flex-row md:justify-between font-bold p-6 sm:p-10 gap-6">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl">04</h1>
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl">FoodPlace</h1>
+            </div>
+
+            <div className="flex flex-col md:flex-row md:justify-between font-bold pt-10 md:pt-32 p-6 sm:p-10 gap-8">
+              <div className="text-base sm:text-xl md:text-2xl">
+                <h1 className="font-medium tracking-tighter text-white">
+                  FoodPlace, a modern and responsive food website
+                  <br /> where delicious Nigerian dishes like jollof rice, fried
+                  rice,
+                  <br /> and other local favorites are showcased and ready to
+                  order online.
+                </h1>
+                <div className="pt-6">
+                  <Link
+                    href="http://d-foodplace.netlify.app/"
+                    className="bg-black border-t-2 border-b-2 border-r-0 border-l-0 border border-white w-40 sm:w-52 flex gap-3 items-center text-white px-2 py-2 rounded-md hover:bg-gradient-to-r hover:from-gray-600 hover:to-white hover:text-black transition duration-300 ease-in-out "
+                  >
+                    <span> View Project </span>
+                    <span>
+                      <Image
+                        src={polygon}
+                        alt="arrowimg"
+                        width={8}
+                        height={8}
+                        className="mx-auto"
+                      />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+              <Atropos
+                className="my-atropos"
+                activeOffset={40}
+                shadowScale={1.05}
+              >
+                <div>
+                  <Image
+                    src={food}
+                    alt="orderimg"
                     className="rounded-lg w-full max-w-md mx-auto"
                   />
                 </div>
